@@ -1,0 +1,35 @@
+._account__modal{
+    width: 10rem;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 120%;
+    right: -50%;
+}
+._account__modal::before{
+    content: '';
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #fff;
+    position: absolute;
+    top: -2%;
+    right: 7%;
+    transform: rotate(45deg);
+}
+
+._account__item{
+    padding: 5px 10px;
+    font-size: 1rem;
+    color: rgb(62, 62, 245);
+    transition: .5s;
+}
+._account__item:hover{
+    color: rgb(22, 22, 233);
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .5s;
+}

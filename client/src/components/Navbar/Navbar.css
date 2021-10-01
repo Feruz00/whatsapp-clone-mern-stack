@@ -1,0 +1,89 @@
+._navbar{
+    height: 3rem;
+    background-color: #e2dddd;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1000;
+    top:0;
+    left: 0;
+    right: 0;
+    /* padding-left: 5rem;
+    padding-right: 5rem; */
+}
+a{
+    text-decoration: none;
+}
+._navbar__brand a{
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    transition: .5s;
+}
+._navbar__brand a:hover{
+    letter-spacing: 1px;
+    transition: .5s;
+}
+._navbar__search{
+    width: 20rem;
+    height: 1.5rem;
+    position: relative;
+}
+._navbar__icon{
+    position: absolute;
+    z-index: 101;
+    padding-left: 1px;
+    color: #b6b4b4;
+}
+._navbar__search input{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    outline: none;
+    padding-left: 1.5rem;
+    font-size: 1rem;
+    vertical-align: center;
+    color: rgb(73, 72, 72);
+    border-radius: 5px;
+    border: none;
+    /* text-align: center; */
+}
+._navbar__menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 12rem;
+}
+
+._navbar__active{
+    color: black;
+}
+._menu__item{
+    font-size: 1.5rem;
+    /* cursor: pointer; */
+    color: #615d5d;
+    position: relative;
+}
+.__item{
+    cursor:pointer;
+}
+._menu__item:hover{
+    color: rgb(22, 22, 233);
+}
+
+.nyshan{
+    display: none;
+    width: 5px;
+    height: 5px;
+    background-color: rgb(230, 40, 40);
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top:20%;
+    right: 0;
+}

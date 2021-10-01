@@ -1,0 +1,40 @@
+._profile{
+    padding-top: 1rem;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+._body{
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    grid-column-gap: 2rem;
+}
+._picture{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+._picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+._first{
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+._first button, ._first a{
+    margin-left: 1rem;
+}
+._first h1{
+    font-size: 1.5rem;
+}
+._fl{
+    font-size: 1.1rem;
+}

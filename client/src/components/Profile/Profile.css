@@ -1,0 +1,28 @@
+._profile{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 1rem;
+    /* margin-top: 5rem; */
+    height: calc(100vh - 3rem);
+    width: 100%;
+}
+.__{
+    display: flex;
+    /* background-color: rgb(173, 155, 155); */
+    flex-direction: column;
+    width: 30rem;
+}
+.left{
+    width: 100%;
+    display: flex;
+    /* background-color: #fff; */
+    flex-direction: row;
+    justify-content: space-around  ;
+
+    /* padding-left: auto; */
+}
+.item{
+    outline: none;
+    background-color: #fff;
+}

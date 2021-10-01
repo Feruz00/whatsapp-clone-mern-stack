@@ -1,0 +1,334 @@
+/* main */
+.conversation{
+    width: 90%;
+    height: 100vh;
+    padding-top: 3.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #ffffff; */
+    margin: 0 auto;
+    /* color: #ffa500; */
+    /* color: #35339b */
+}
+
+/* 2 sany bolek */
+
+.sidebar{
+    width: 17rem;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+/* sidebar */
+
+.sidebar_list{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
+    width: 100%;
+    height: calc( 100% - 2.5rem);
+    overflow: hidden;
+}
+.sidebar_list:hover{
+    overflow-y: scroll;
+}
+
+.conversation_button{
+    height: 2.5rem;
+    width: 100%;
+}
+
+.message_item{
+    padding: 0.2rem 0.3rem;
+    color:rgb(124, 121, 121);
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 3.6rem 12rem;
+    height: 3.7rem;
+    width: 100%;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+}
+.message_item:last-child{
+    border-bottom: none;
+}
+._color{
+    background-color: #EEEEEE;
+}
+
+.photo_section{
+    /* width: 4rem; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    grid-column: 1 / 2;
+}
+
+.message_section{
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    font-size: 0.8rem;
+}
+.message_text{
+    width: 100%;
+    /* padding: 0; */
+    position: relative;
+    /* display: grid;
+    grid-template-columns: 90% 10%; */
+}
+.text_mes{
+    position: absolute;
+    left: 0.2rem;
+    font-size: 0.85rem;
+    /* grid-column: 1 / 2; */
+}
+.message_time{
+    position: absolute;
+    right: 0.5rem;
+    height: 7px;
+    width: 7px;
+    background-color: hsl(240, 100%, 35%);
+    border-radius: 50%;
+    /* grid-column: 2 / 3; */
+}
+._chat_user_name{
+
+    font-size: 0.85rem;
+    font-weight: bolder;
+    color: #2e2d2d;
+}
+/* ------------------------------------------------------- */
+
+.open_conver{
+    width: calc( 100% - 17rem );
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    display: grid;
+    padding: 0.2rem 0.3rem;
+    grid-template-rows: max-content auto max-content;
+}
+.open_bottom{
+    grid-row: 3 / 4;
+    width: 100%;
+    display: inline-flex;
+}
+._start_messaging{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: normal;
+    grid-row: 1 / 4;
+}
+.open_top{
+    width: 100%;
+    grid-row: 1 / 2;
+    height: max-content;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    border-bottom: 1px solid #ccc;
+    padding: 0.2rem;
+}
+.open_top_name{
+    grid-column: 1 / 2;
+}
+.opened_top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.open_item{
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+.open_item h6{
+    position: absolute;
+    left: 0rem;
+}
+.open_item h6:last-child{
+    right: 0rem;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.open_item:last-child{
+    border-bottom: none;
+}
+.open_first_line{
+    width: 70%;
+    font-size: 0.7rem;
+    display: grid;
+    grid-template-columns: auto 8rem;
+    grid-row-gap: 1rem;
+    margin: 1rem auto;
+}
+.hr{
+    border-style: none;
+    width: 1rem;
+    height: 0.3rem;
+    border-top-style: dotted;
+    border-color: #ccc;
+    border-width: 0.3rem;
+    cursor: pointer;
+}
+.open_user_img{
+    grid-row: 1 / 2;
+}
+.open_second_line{
+    width: 100%;
+    height: 1.5rem;
+    position: relative;
+}
+.open_second_line h6{
+    position: absolute;
+    left: 1rem;
+    top: 0rem;
+}
+.open_second_line h6:last-child{
+    position: absolute;
+    right: 1rem;
+}
+.open_top_info{
+    grid-column: 2 / 3;
+}
+
+ /* chat center */
+.open_chat_center{
+    grid-row: 2 / 3;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start; 
+}
+.open_info_center{
+    grid-auto-rows: max-content;
+    display: grid;
+    grid-row: 2 / 4;
+    margin-top: 0.5rem;
+}
+.open_show_users{
+    padding-left: 1rem;
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-auto-rows: 3.7rem;
+}
+.open_user_item{
+    border-bottom: 1px solid #ccc;
+    display: grid;
+    position: relative;
+    grid-template-columns: calc(100% - 3rem) 3rem;
+}
+.open_user_item:last-child{
+    border-bottom: none;
+}
+.open_show_users:hover{
+    overflow-y: auto;
+}
+.open_item h5 {
+    margin-top: 1rem;
+    padding-left: 1rem;
+    color: #dc3545;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+.ant-avatar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* color: #252525 */
+}
+.open_all_users{
+    width: 100%;
+    display: block;
+    position: relative;
+    padding: 0.3rem;
+    border-bottom: 1px solid #ccc;
+}
+.open_all_users:last-child{
+    border-bottom:  none;
+}
+.used_admin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.used_admin h6{
+    color: #dc3545;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+}
+.used_admin h6:last-child{
+    border-bottom: none;
+}
+.open_user_place{
+    position: absolute;
+    left: 0.2rem;
+    display: flex;
+}
+.ucnokat{
+    position: absolute;
+    right: 0.2rem;
+}
+.message_container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: max-content auto;
+    position: relative;
+    grid-column-gap: 5px;
+    -ms-grid-columns: 5px;
+}
+.message_container span{
+    grid-column: 1 / 2;
+}
+.message_right, .message_left{
+    grid-column: 2 / 3;
+    max-width: 50%;
+    border: 1px solid #a09f9f;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.message_right p, .message_left p{
+    position: absolute;
+    
+}
+.bg-fer{
+    background-color: #eeeeee;
+    margin-right: 5px;
+}
+.my_boder{
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+    overflow-wrap: anywhere;
+    max-width: 16.7rem;
+    margin-top: 0.5rem;
+}
+.write_message{
+    display: flex;
+    flex-direction: column;
+}
